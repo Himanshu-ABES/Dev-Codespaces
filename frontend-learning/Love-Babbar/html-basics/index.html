@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    hello world
+    <!-- this is a comment -->
+    <h1>This is my first heading</h1>
+    <h2>This is my second heading</h2>
+    <h3>This is my third heading</h3>
+    <h4>This is my fourth heading</h4>
+    <h5>This is my fourth heading</h5>
+    <h6>This is my fifth heading</h6>
+
+    <a href="https://www.google.com">Click Here</a>
+
+    <ul type="circle">
+        <li>Maggi</li>
+        <li>Burger</li>
+        <li>Pizza</li>
+    </ul>
+
+    <ol type="a">
+        <li>Boil Water</li>
+        <li>Put Tea Bag in it</li>
+        <li>Serve Hot</li>
+    </ol>
+
+    <table>
+        <tr>
+            <td>Sr. No.</td>
+            <td>Name</td>
+            <td>Login</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Himanshu</td>
+            <td>YT</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yash</td>
+            <td>Tiktok</td>
+        </tr>
+    </table>
+
+
+    <p>Lorem <strong>ipsum</strong> <em>dolor</em>, sit <s>amet</s> consectetur adipisicing elit. Placeat, voluptates tempore! Id quia voluptatum nihil veniam impedit repudiandae, blanditiis, illum reiciendis est consequatur eum nam, expedita libero modi ducimus ipsam.</p>
+
+    <p>2<sup>5</sup></p>
+    <p>CO<sub>2</sub2></p>
+
+    <pre>
+        My
+        name
+        is
+        Himanshu
+        Chauhan
+    </pre>
+
+    <p>Lorem <code>ipsum</code> dolor sit amet consectetur adipisicing elit. Dicta, sunt!</p>
+
+    <!-- emmet shortcuts -->
+    ul>li*3
+    aritcle+section
+    table>(tr>td*3)*3
+    h1{this is my first heading}
+    
+    <!-- div tag is used as a container for other html elements -->
+
+    <!-- inline and block elements are different as inline elements do not start on a new line and only take up as much width as necessary. whereas block elements always start on a new line and take up the full width available.
+    examples of inline and block elements are:
+    inline elements: a, strong, em, s, code, img, span
+    block elements: div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, td, pre -->
+
+    <div class="container" style="background-color: aqua;">This is a div tag</div>
+    <span class="wrapper" style="background-color: crimson;">This is a span tag</span>
+    <span class="wrapper" style="background-color: violet;">This is a span tag</span>
+
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="mailto:explore.himanshu@gmail.com">Email</a>
+    <a href="tel:+917292055087">Call Us</a>
+
+    <!-- creating a table in html with semantic tags -->
+    <table border="1">
+        <thead>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td colspan="3">Bill</td> <!-- expanding columnwise -->
+                <!-- <td>Male</td>
+                <td>17</td> -->
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td rowspan="3">17</td> <!-- expanding rowwise -->
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <!-- <td>17</td> -->
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <!-- <td>17</td> -->
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+    <!-- creating another table -->
+    <table border="1">
+        <thead>
+            <th>Column1</th>
+            <th>Column2</th>
+            <th>Column3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <!-- <td>Row 2 Cell 1</td> -->
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Row 3 Cell 1</td>
+                <!-- <td>Row 3 Cell 2</td> -->
+                <!-- <td>Row 3 Cell 3</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- creating another table -->
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Job</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="3">Total Expense:</td>
+                <td>$4600</td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- creating another table -->
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="8">1</th>
+                <th rowspan="4">Kerala</th>
+                <th rowspan="2">Cochin</th>
+                <th>New Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>Main Stree</th>
+                <th>300</th>
+                <th>288</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Trivandrum</th>
+                <th>Guru Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>TVK Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Maharashtra</th>
+                <th rowspan="2">Mumbai</th>
+                <th>Krishna Street</th>
+                <th>700</th>
+                <th>850</th>
+                <th>1</th>
+            </tr>
+            <tr>
+                <th>Main Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Surat</th>
+                <th>New Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <th>Billa Street</th>
+                <th>500</th>
+                <th>600</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th rowspan="2">2</th>
+                <th rowspan="2">Alaska</th>
+                <th rowspan="2">AKA Central</th>
+                <th>New Street</th>
+                <th>200</th>
+                <th>210</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>Cross Street</th>
+                <th>1000</th>
+                <th>1050</th>
+                <th>10</th>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Forms in HTML -->
+    <form action="">
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" placeholder="Enter your email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="" id="password" placeholder="Enter your password">
+        <br><br>
+        <input type="submit" value="Login">
+        <br><br>
+        <input type="date" id="birthday">
+        <br><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="porsche">Porsche</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="jaguar">Jaguar</option>
+        </select>
+        <br><br>
+
+        <textarea name="message" id="message" placeholder="Enter your message here"></textarea>
+        <br><br>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <br><br>
+
+        <label for="english">English</label>
+        <input type="checkbox" name="subject1" id="english">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" name="subject2" id="hindi">
+        <br><br>
+
+        <label for="file">Choose File</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <input type="image" src="https://www.nicepng.com/png/detail/865-8655014_back-arrow-button-comments-number-one-in-a.png" alt="image not rendered" width="30" height="30">
+    </form>
+    <!-- fieldset and legend -->
+    
+    <!-- creating advanced form templates -->
+    <form action="">
+        <h2>Event Registration</h2>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="contact" id="phone">
+        <br><br>
+
+        <label for="job">Occupation</label>
+        <select name="job" id="job">
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="interest">Topic of Interest</label>
+        <input type="checkbox" name="interest" id="interest" value="HTML">HTML
+        <input type="checkbox" name="interest" id="interest" value="CSS">CSS
+        <input type="checkbox" name="interest" id="interest" value="JavaScript">JavaScript
+        <input type="checkbox" name="interest" id="interest" value="React">React
+        <input type="checkbox" name="interest" id="interest" value="Node.js">Node.js
+        <br><br>
+
+        <label>Availability </label>
+        <label for="full-time">Full-Time</label>
+        <input type="radio" name="availability" id="full-time">
+        <label for="part-time">Part-Time</label>
+        <input type="radio" name="availability" id="part-time">
+        <br><br>
+
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>

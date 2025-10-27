@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-color: crimson;
+    border: 2px solid red;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: #000;color: maroon;
+}
+
+.box2{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    background-color: greenyellow;
+}
+
+.box3{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    background-color: skyblue;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- positions in css -->
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+    <!-- agar box 2 ko position relative karenge to uska space as it is rahega but agar position absolute karenge to uska space as it is nahi rahega baaki elements uske according adjust ho jayenge -->
+    <!-- sticky and fixed position: sticksy apne parent container mein hi stick hota hai jabki fixed pure viewport mein stick hota hai -->
+    relative units in css: em, rem, vh, vw, %
+    em - jo bhi font size parent element ka hai uske basis pe calculate hota hai eg. 10em agar parent element ka font size 16px hai to 10em = 160px
+
+    rem - root element ke basis pe calculate hota hai eg. 10rem agar root element ka font size 16px hai to 10rem = 160px
+
+    image-float: agar image ke aas paas text wrap karwana hai to image ko float karna padta hai
+    attributes of float: left, right, none, inherit
+    
+    box shadow: 20px 10px 30px pink; (x-offset, y-offset, blur-radius, color)
+    text shadow: 2px 2px 5px red; (x-offset, y-offset, blur-radius, color)
+    text-transform: uppercase, lowercase, capitalize
+
+    animations in css:
+    @keyframes slidein {
+        from {
+            bgcolor: red;
+        }
+        to{
+            bgcolor: yellow;
+        }
+    }
+    various animations are: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n)
+</body>
+</html>
